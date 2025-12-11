@@ -1,12 +1,11 @@
 import "./App.css";
+import Header from "./components/header";
 
 function App() {
   return (
-    <>
-      <button className="rounded bg-blue-500 px-4 py-2 text-base text-white">
-        test{" "}
-      </button>
-    </>
+    <div className="min-h-screen">
+      <Header />
+    </div>
   );
 }
 
