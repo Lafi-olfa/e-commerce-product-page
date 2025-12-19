@@ -21,9 +21,9 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-20 flex min-w-[259px] items-center justify-between bg-white px-4 py-4 shadow-md">
+      <header className="mx-auto flex max-w-4xl min-w-[259px] items-center justify-between border-0 p-8 md:border-b md:border-slate-400">
         {/* left : Logo + menu */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-start gap-4">
           {/* Bouton menu mobile */}
           <button
             onClick={toggleMenu}
@@ -57,9 +57,9 @@ export default function Header() {
         </div>
 
         {/* right */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-start gap-4">
           {/*cart */}
-          <button className="relative p-1" aria-label="Panier">
+          <button className="relative p-1" aria-label="cart">
             <img src={IconCart} alt="Cart" className="h-5 w-5" />
           </button>
 
